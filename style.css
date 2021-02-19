@@ -8,6 +8,7 @@
 body {
     height: 100vh;
     background: #e4ebf5;
+    font-family: '@Microsoft YaHei UI Light';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,38 +18,120 @@ body {
     width: 350px;
     height: 600px;
     border-radius: 40px;
+    padding: 40px;
+    background: #e4ebf5;
+    color: rgb(41, 121, 255);
+    color: #121212;
+    box-shadow:  
+        10px 10px 30px #c2c8d0,
+        -10px -10px 30px #ffffff;    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+.card img {
+    width: 100%;
+}
+.card span {
+    color: rgb(41, 121, 255);
+}
+
+.form {
+    width: 100%;
+}
+
+
+.input-text {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: large;
 
     background: #e4ebf5;
     box-shadow:  
-        10px 10px 30px #c2c8d0,
-        -10px -10px 30px #ffffff;
-    transition: 5s;    
+        0 0 0 #c2c8d0,
+        0 0 0 #ffffff,
+        inset  4px 4px 8px #c2c8d0,
+        inset -4px -4px 8px #ffffff;
+    
+    transition: 0.4s;
+}
+.input-text:hover {
+    box-shadow:  
+        0 0 0 #c2c8d0,
+        0 0 0 #ffffff,
+        inset  2px 2px 4px #c2c8d0,
+        inset -2px -2px 4px #ffffff;
+
+}
+.input-text:focus {
+    box-shadow: 
+        4px 4px 8px #c2c8d0,
+        -4px -4px 8px #ffffff,
+        inset  0 0 0 #c2c8d0,
+        inset 0 0 0 #ffffff;
+}
+
+
+.input-check {
+    border: none;
+    outline: none;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/* .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+
+} */
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;    
 }
 
 
-.button {
-    width: 100px;
-    height: 50px;
-    border-radius: 40px;
+.hr {width: 100%; opacity: 0.5; }
+hr.light { border: 1px solid #ffffff; }
+hr.dark { border: 1px solid #c2c8d0;}
+
+
+
+
+.neu-md {
     /* background: rgb(228, 235, 245); */
     background: #e4ebf5;
-
     box-shadow: 
-        5px 10px 10px #c2c8d0,
-        -5px -5px 10px #ffffff,
+        4px 4px 8px #c2c8d0,
+        -4px -4px 8px #ffffff,
         inset  0 0 0 #c2c8d0,
         inset 0 0 0 #ffffff;
-    
+
     transition: .5s ease;
+    cursor: pointer;
 }
-.button:hover {
+.neu-md:hover {
     box-shadow:  
         0 0 0 #c2c8d0,
         0 0 0 #ffffff,
-        inset  5px 5px 10px #c2c8d0,
-        inset -5px -5px 10px #ffffff;
+        inset  4px 4px 8px #c2c8d0,
+        inset -4px -4px 8px #ffffff;
 }
