@@ -38,7 +38,7 @@ body {
     padding: 30px;
     background: var(--bg);
     /* color: rgb(41, 121, 255); */
-    color: #121212;
+    color: var(--font-color);
     box-shadow: 
         4px 4px 8px var(--dark-shadow),
         -4px -4px 8px var(--light-shadow);
@@ -50,7 +50,6 @@ body {
 }
 .card img {
     width: 80%;
-    filter:sepia(0.1);
 }
 .card span {
     color: rgb(41, 121, 255);
@@ -65,7 +64,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     font-size: large;
-
+    color: var(--font-color);
     background: var(--bg);
     box-shadow:  
         0 0 0 var(--bg),
